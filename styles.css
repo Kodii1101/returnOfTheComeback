@@ -1,0 +1,21 @@
+.title {
+    border-style: solid;
+    text-align: center;
+}
+
+.sub-title {
+    color: blue;
+    text-align: center;
+}
+
+.btn-contact {
+    border-style: none;
+    background-color: aquamarine;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
