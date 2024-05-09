@@ -18,6 +18,7 @@ var car = {
 console.log(fruits[1]);
 console.log(car.model);
 console.log(car.calculateSpeed());
+fruits.reverse();
 
 var caculateSalary = function (salaryAmount, employeeName) {
     console.log("Salary is minimum");
