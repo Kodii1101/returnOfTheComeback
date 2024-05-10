@@ -50,3 +50,6 @@ document
 /* function () {
     console.log("naclick Toggled!");
 } */
+
+/* COMPLETED THE FLOWCHART, THE FLOWCHART WILL SERVE AS A GUIDE TO THE FUTURE OF THIS APP
+} */
