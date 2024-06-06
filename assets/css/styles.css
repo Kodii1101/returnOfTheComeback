@@ -1,165 +1,153 @@
-.title {
-    border-style: solid;
-    text-align: center;
+:root {
+  /* colors */
+  --light-color: #fff;
+  --light-color-alt: #afb6cd;
+  --primary-background-color: #131417;
+  --secondary-background-color: #252830;
+  --hover-light-color: var(--light-color);
+  --hover-dark-color: var(--primary-background-color);
+  --gradient-color: linear-gradient(100deg, #48504a, #fad648, #a767e5, #12bcfe, #44ce7b);
+  --transparent-light-color: rgba(255, 255, 255, 0.05);
+  --transparent-dark-color: rgba(0, 0, 0, 0.75);
+  --gold-crayola: hsl(38, 61%, 73%);
+  --quick-silver: hsla(0, 0%, 65%, 1);
+  --davys-grey: hsla(30, 3%, 34%, 1);
+  --smoky-black-1: hsla(40, 12%, 5%, 1);
+  --smoky-black-2: hsla(30, 8%, 5%, 1);
+  --smoky-black-3: hsla(0, 3%, 7%, 1);
+  --eerie-black-1: hsla(210, 4%, 9%, 1);
+  --eerie-black-2: hsla(210, 4%, 11%, 1);
+  --eerie-black-3: hsla(180, 2%, 8%, 1);
+  --eerie-black-4: hsla(0, 0%, 13%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --white-alpha-20: hsla(0, 0%, 100%, 0.2);
+  --white-alpha-10: hsla(0, 0%, 100%, 0.1);
+  --black: hsla(0, 0%, 0%, 1);
+  --black-alpha-80: hsla(0, 0%, 0%, 0.8);
+  --black-alpha-15: hsla(0, 0%, 0%, 0.15);
+
+  /* fontsizes */
+  --font-family: "Poppins", "sans-serif";
+  --font-size-xsm: 1.2rem;
+  --font-size-sm: 1.6rem;
+  --font-size-md: 2.4rem;
+  --font-size-lg: 3rem;
+  --font-size-xl: 4rem;
+  --fontSize-display-1: calc(1.3rem + 6.7vw);
+  --fontSize-headline-1: calc(2rem + 2.5vw);
+  --fontSize-headline-2: calc(1.3rem + 2.4vw);
+  --fontSize-title-1: calc(1.6rem + 1.2vw);
+  --fontSize-title-2: 2.2rem;
+  --fontSize-title-3: 2.1rem;
+  --fontSize-title-4: calc(1.6rem + 1.2vw);
+  --fontSize-body-1: 2.4rem;
+  --fontSize-body-2: 1.6rem;
+  --fontSize-body-3: 1.8rem;
+  --fontSize-body-4: 1.6rem;
+  --fontSize-label-1: 1.4rem;
+  --fontSize-label-2: 1.2rem;
+
+  /* gaps, margins, heights and widths */
+  --gap: 2rem;
+  --margin-sm: 2rem;
+  --margin-md: 3rem;
+  --item-min-height-sm: 20rem;
+  --item-min-height-md: 30rem;
 }
 
-.sub-title {
-    color: blue;
-    text-align: center;
+/* ----------------------- *\
+    CSS FOR THE BODY 
+\* -----------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.contact-us {
-    border-style: none;
-    background-color: aquamarine;
-    padding: 8px;
-    font-weight: bold;
+li {
+  list-style: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
+a,
+img,
+data,
+span,
+input,
+button,
+select,
+ion-icon,
+textarea {
+  display: block;
 }
 
-.product-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+img {
+  height: auto;
 }
 
-.p1,
-.p2,
-.p3 {
-    border-style: solid;
-    margin-left: 20px;
-    padding: 15px;
+input,
+button,
+select,
+textarea {
+  background: none;
+  border: none;
+  font: inherit;
 }
 
-.fa {
-    margin-left: 5px;
+input,
+select,
+textarea {
+  width: 100%;
+  outline: none;
 }
 
-/* copied from w3schools */
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
+button {
+  cursor: pointer;
 }
 
-.fa:hover {
-    opacity: 0.7;
+address {
+  font-style: normal;
 }
 
-.fa-facebook {
-    background: #3b5998;
-    color: white;
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
 }
 
-.fa-twitter {
-    background: #55acee;
-    color: white;
+body {
+  background-color: var(--eerie-black-1);
+  color: var(--white);
+  font-family: var(--fontFamily-dm_sans);
+  font-size: var(--fontSize-body-4);
+  font-weight: var(--weight-regular);
+  line-height: var(--lineHeight-5);
+  overflow: hidden;
+  height: 300vh;
 }
 
-.fa-google {
-    background: #dd4b39;
-    color: white;
+body.loaded {
+  overflow: overlay;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
+body.nav-active {
+  overflow: hidden;
 }
 
-.fa-youtube {
-    background: #bb0000;
-    color: white;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.fa-instagram {
-    background: #125688;
-    color: white;
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
-.fa-snapchat-ghost {
-    background: #fffc00;
-    color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-    background: #00aff0;
-    color: white;
-}
-
-.fa-android {
-    background: #a4c639;
-    color: white;
-}
-
-.fa-dribbble {
-    background: #ea4c89;
-    color: white;
-}
-
-.fa-vimeo {
-    background: #45bbff;
-    color: white;
-}
-
-.fa-tumblr {
-    background: #2c4762;
-    color: white;
-}
-
-.fa-vine {
-    background: #00b489;
-    color: white;
-}
-
-.fa-foursquare {
-    background: #45bbff;
-    color: white;
-}
-
-.fa-stumbleupon {
-    background: #eb4924;
-    color: white;
-}
-
-.fa-flickr {
-    background: #f40083;
-    color: white;
-}
-
-.fa-yahoo {
-    background: #430297;
-    color: white;
-}
-
-.fa-soundcloud {
-    background: #ff5500;
-    color: white;
-}
-
-.fa-reddit {
-    background: #ff5700;
-    color: white;
-}
-
-.fa-rss {
-    background: #ff6600;
-    color: white;
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold-crayola);
 }
