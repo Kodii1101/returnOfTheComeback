@@ -26,8 +26,11 @@
   --black-alpha-80: hsla(0, 0%, 0%, 0.8);
   --black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
+  /* fontfmaily */
+  --fontFamily-forum: "Forum", cursive;
+  --fontFamily-dm_sans: "DM Sans", sans-serif;
+
   /* fontsizes */
-  --font-family: "Poppins", "sans-serif";
   --font-size-xsm: 1.2rem;
   --font-size-sm: 1.6rem;
   --font-size-md: 2.4rem;
@@ -48,7 +51,8 @@
   --fontSize-label-2: 1.2rem;
 
   /* gaps, margins, heights and widths */
-  --gap: 2rem;
+  --s-gap: 0.5rem;
+  --gap: 1rem;
   --margin-sm: 2rem;
   --margin-md: 3rem;
   --item-min-height-sm: 20rem;
@@ -123,7 +127,7 @@ html {
 
 body {
   background-color: var(--eerie-black-1);
-  color: var(--white);
+  color: var(--black);
   font-family: var(--fontFamily-dm_sans);
   font-size: var(--fontSize-body-4);
   font-weight: var(--weight-regular);
@@ -150,4 +154,73 @@ body.nav-active {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--gold-crayola);
+}
+
+/* labels */
+header {
+  padding: var(--gap);
+  background-color: blueviolet;
+}
+main {
+  background-color: #44ce7b;
+}
+footer {
+  background-color: #12bcfe;
+}
+
+.main-navbar {
+  background-color: antiquewhite;
+  padding: var(--gap) 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-width: 600px;
+}
+
+:is(.default-menu a, .side-menu a):hover:not(.toggle-icon a) {
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  &:active {
+    color: #12bcfe;
+  }
+}
+
+.logo,
+.default-menu,
+.side-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  background-color: pink;
+  & a {
+    background: var(--gradient-color);
+    border: black solid;
+    padding: var(--s-gap);
+    margin: var(--gap);
+  }
+}
+
+.default-menu {
+  background-color: gold;
+  & a {
+    background-color: #fad648;
+    border: black solid;
+    padding: var(--s-gap);
+    margin: var(--gap);
+  }
+}
+
+.side-menu {
+  background-color: #48504a;
+  & a {
+    background-color: var(--light-color);
+    border: black solid;
+    padding: var(--s-gap);
+    margin: var(--gap);
+  }
 }
