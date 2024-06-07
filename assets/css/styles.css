@@ -176,6 +176,10 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   min-width: 600px;
+  .default-menu {
+    color: red;
+    margin: 200px;
+  }
 }
 
 :is(.default-menu a, .side-menu a):hover:not(.toggle-icon a) {
@@ -197,7 +201,7 @@ footer {
 
 .logo {
   background-color: pink;
-  & a {
+  a {
     background: var(--gradient-color);
     border: black solid;
     padding: var(--s-gap);
@@ -207,7 +211,7 @@ footer {
 
 .default-menu {
   background-color: gold;
-  & a {
+  a {
     background-color: #fad648;
     border: black solid;
     padding: var(--s-gap);
@@ -217,7 +221,7 @@ footer {
 
 .side-menu {
   background-color: #48504a;
-  & a {
+  a {
     background-color: var(--light-color);
     border: black solid;
     padding: var(--s-gap);
