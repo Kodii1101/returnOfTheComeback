@@ -1,1 +1,1 @@
-lezgo!
+Lets practice HTML and CSS!
