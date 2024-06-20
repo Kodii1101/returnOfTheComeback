@@ -57,6 +57,8 @@
   --margin-md: 3rem;
   --item-min-height-sm: 20rem;
   --item-min-height-md: 30rem;
+  --item-max-height-sm: 50vh;
+  --item-max-heitght-md: 100vh;
 }
 
 /* ----------------------- *\
@@ -233,6 +235,7 @@ main {
   max-width: 1860px;
   min-width: 200px;
   background-color: var(--davys-grey);
+  margin-bottom: var(--margin-sm);
 }
 
 .blogs {
@@ -240,6 +243,7 @@ main {
   max-width: 1860px;
   min-width: 200px;
   background-color: var(--davys-grey);
+  margin-bottom: var(--margin-sm);
 }
 
 .photo-gallery {
@@ -247,8 +251,11 @@ main {
   max-width: 1860px;
   min-width: 200px;
   background-color: var(--davys-grey);
+  margin-bottom: var(--margin-sm);
 }
 
 footer {
   background-color: #12bcfe;
+  height: var(--item-max-height-sm);
+  width: 100%;
 }
